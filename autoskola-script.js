@@ -12,7 +12,7 @@ const fadeEls = document.querySelectorAll('.fade-in');
 const fadeObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry, i) => {
         if (entry.isIntersecting) {
-            setTimeout(() => entry.target.classList.add('visible'), i * 100);
+            setTimeout(() => entry.target.classList.add('visible'), i * 120);
         }
     });
 }, { threshold: 0.1 });

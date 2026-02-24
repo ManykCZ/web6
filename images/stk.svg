@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="50mm"
+   height="50mm"
+   viewBox="0 0 50 50"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
+   sodipodi:docname="stk.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="px"
+     showguides="true"
+     inkscape:zoom="2.0006519"
+     inkscape:cx="188.43858"
+     inkscape:cy="107.96481"
+     inkscape:window-width="1920"
+     inkscape:window-height="996"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <rect
+       x="-27.491039"
+       y="66.978169"
+       width="119.9609"
+       height="13.495601"
+       id="rect3" />
+    <rect
+       x="13.495601"
+       y="60.980124"
+       width="170.44444"
+       height="89.470837"
+       id="rect2" />
+  </defs>
+  <g
+     inkscape:label="Vrstva 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:inline">
+    <rect
+       style="fill:#ff0000;stroke-width:0.264583"
+       id="rect1"
+       width="50.254456"
+       height="50.254456"
+       x="-0.13224857"
+       y="0.13224854"
+       ry="0.046756927" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.92540681,0,0,0.92540681,-0.70898078,-34.652854)"
+       id="text1"
+       style="line-height:1;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect2);display:inline;fill:#f2f2f2"
+       x="1.3745117e-06"
+       y="0"><tspan
+         x="13.496094"
+         y="70.428433"
+         id="tspan4"><tspan
+           style="letter-spacing:2.28728px"
+           id="tspan1">S</tspan><tspan
+           style="letter-spacing:2.28728px"
+           id="tspan2">T</tspan><tspan
+           dx="2.2872801"
+           style="font-weight:bold;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold'"
+           id="tspan3">K</tspan></tspan></text>
+  </g>
+</svg>

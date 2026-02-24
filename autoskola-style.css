@@ -94,11 +94,14 @@ main {
 }
 
 .navbar-logo {
-    font-size: 2rem;
-    font-weight: 600;
-    color: black;
-    text-decoration: none;
     cursor: pointer;
+}
+.navbar-logo img {
+    height: 60px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .navbar-container .navbar-menu {
@@ -117,13 +120,15 @@ main {
     border-radius: 10px;
     border: 2px solid transparent;
     transition: all 0.7s ease;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
 }
 
 .navbar-container .navbar-menu li a:hover 
     /* .navbar-container .navbar-menu li a.active */
     {
     background-color: rgb(242, 236, 236);
-    color: black;
+    color: #000;
     border: 2px solid transparent;
 }
 
@@ -140,7 +145,7 @@ main {
     width: 25px;
     height: 3px;
     margin: 5px auto;
-    background: black;
+    background: #000;
     transition: all 0.3s ease-in-out;
 }
 
@@ -1516,6 +1521,214 @@ main {
     border-color: #C52222;
 }
 
+/* ===== CENÍK PAGE STYLES ===== */
+
+/* ===== PRICING TABLE (tmavá sekce — styl kj-cenik) ===== */
+.cenik-section {
+    background: #0d0d0d;
+    padding: 6rem 2rem;
+}
+
+.cenik-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 6rem;
+}
+
+/* levý sloupec — nadpis */
+.cenik-left h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+    margin-bottom: 1.2rem;
+}
+
+.cenik-left h2 span { color: #C52222; }
+
+.cenik-left p {
+    font-size: 0.95rem;
+    color: rgba(255,255,255,0.35);
+    font-weight: 300;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.cenik-left-note {
+    border-left: 3px solid #C52222;
+    padding: 1rem 1.2rem;
+    background: rgba(197,34,34,0.06);
+}
+
+.cenik-left-note p {
+    font-size: 0.88rem;
+    color: rgba(255,255,255,0.4);
+    margin: 0;
+    line-height: 1.7;
+}
+
+.cenik-left-note strong {
+    color: rgba(255,255,255,0.75);
+}
+
+/* pravý sloupec — řádky ceníku (styl kj-cenik-radek) */
+.cenik-radky {
+    display: flex;
+    flex-direction: column;
+}
+
+.cenik-radek {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.8rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    gap: 2rem;
+}
+
+.cenik-radek:last-child {
+    border-bottom: none;
+}
+
+.cenik-radek--highlight {
+    border-bottom-color: rgba(197,34,34,0.35);
+}
+
+.cenik-radek-nazev {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 0.3rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.cenik-tip {
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #C52222;
+    background: rgba(197,34,34,0.12);
+    border: 1px solid rgba(197,34,34,0.25);
+    padding: 0.2rem 0.6rem;
+    border-radius: 3px;
+}
+
+.cenik-radek-popis {
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.35);
+    font-weight: 300;
+}
+
+.cenik-radek-cena {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: -0.02em;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.cenik-radek-cena span {
+    font-size: 1rem;
+    font-weight: 300;
+    color: rgba(255,255,255,0.4);
+}
+
+.cenik-cta-link {
+    display: inline-block;
+    margin-top: 2.5rem;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    padding-bottom: 0.2rem;
+    transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.cenik-cta-link:hover {
+    color: #C52222;
+    border-color: #C52222;
+}
+
+/* ===== FAQ — bílá sekce (styl kj-typy) ===== */
+.cenik-faq {
+    background: #fff;
+    padding: 6rem 2rem;
+}
+
+.cenik-faq-inner {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.cenik-faq-inner .kj-section-label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #C52222;
+    margin-bottom: 1rem;
+}
+
+.cenik-faq-inner .kj-section-title {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    color: #000;
+    letter-spacing: -0.02em;
+    margin-bottom: 3rem;
+    line-height: 1.1;
+}
+
+.cenik-faq-seznam {
+    display: flex;
+    flex-direction: column;
+}
+
+.cenik-faq-polozka {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 2rem;
+    padding: 2.5rem 0;
+    border-bottom: 1px solid #efefef;
+    align-items: start;
+}
+
+.cenik-faq-polozka:last-child { border-bottom: none; }
+
+.cenik-faq-ikona {
+    padding-top: 0.3rem;
+    color: #C52222;
+    font-size: 1.4rem;
+    width: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.cenik-faq-obsah h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #000;
+    letter-spacing: -0.01em;
+    margin-bottom: 0.5rem;
+}
+
+.cenik-faq-obsah p {
+    font-size: 0.95rem;
+    color: #777;
+    font-weight: 300;
+    line-height: 1.8;
+    max-width: 540px;
+}
+
 .footer-container {
     background: #000;
     color: #fff;
@@ -1614,7 +1827,7 @@ main {
         align-items: flex-start;
         gap: 1.7rem !important;
         position: fixed;
-        height: 100vh;
+        height: 500vh;
         width: 250px;
         top: 0;
         right: 0;
@@ -1697,6 +1910,10 @@ main {
         max-width: 500px;
     }
 
+    .cenik-inner {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
 }
 
 @media (max-width: 800px) {
@@ -1725,6 +1942,10 @@ main {
         text-align: center;
         width: 100%;
         box-sizing: border-box;
+    }
+
+    .navbar-logo img {
+        max-height: 50px;
     }
 }
 
@@ -1802,6 +2023,13 @@ main {
 
 }
 
+@media (max-width: 600px) {
+    .cenik-faq-polozka {
+        grid-template-columns: 40px 1fr;
+        gap: 1rem;
+    }
+}
+
 @media (max-width: 480px) {
     .navbar-container {
         padding: 0 1rem;
@@ -1876,4 +2104,3 @@ main {
         grid-template-columns: 1fr;
     }
 }
-
